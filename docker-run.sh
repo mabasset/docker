@@ -2,7 +2,19 @@
 
 # Date: 6/11/2024
 # Author: Matteo Bassetto
-# This script containerizes an application
+# This script creates a container to run graphical desktop applications
+
+usage () {
+	echo -e "\nUsage: $(basename $0) [OPTIONS] IMAGE"
+	echo -e "\nA script to launch containerized PCA."
+	echo -e "\nOptions:"
+	echo -e "  -b,  --bash\tattach a bash process to the container. Use only with -d"
+	echo -e "  -d,  --detach\tdetach mode: run container in the background"
+	echo -e "  -h,  --help\tdisplay usage and exit"
+	echo -e "  -p,  --password\tchoose container user password"
+	echo -e "  -s,  --sudo\tgrant root privileges to container user"
+	echo
+}
 
 docker build -t vlc .
 
