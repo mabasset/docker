@@ -48,7 +48,7 @@ docker-install () {
 }
 
 cleaner-install () {
-	SRC="https://raw.githubusercontent.com/mabasset/docker-cleaner/refs/heads/main/docker-clean.sh"
+	SRC="https://raw.githubusercontent.com/mabasset/docker/refs/heads/main/docker-clean.sh"
 	DST="/usr/local/bin/docker-clean"
 	wget -O "$DST" "$SRC" &> /dev/null
 	chmod 755 "$DST"
