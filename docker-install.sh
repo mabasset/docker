@@ -10,7 +10,7 @@ usage () {
 	echo -e "\nOptions:"
 	echo -e "  -c,  --cleaner\tinstall docker-clean.sh"
 	echo -e "  -h,  --help\t\tdisplay usage and exit"
-	echo -e "  -n,  --no-install\tprevent installation"
+	echo -e "  -n,  --no-install\tprevent docker installation"
 	echo -e "  -r,  --reboot\t\treboot system"
 	echo -e "  -u,  --user string\tadd user to docker group"
 	echo
