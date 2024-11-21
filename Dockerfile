@@ -8,5 +8,7 @@ RUN			apt update \
 				vim \
 				x11-apps
 
+COPY		./shared /shared/
+
 ENTRYPOINT	[ "/bin/bash", "-c" ]
-CMD			[ "tail -f /dev/null" ]
+CMD			[ "vlc" ]
